@@ -1,0 +1,258 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1 rem = 10 pixeles*/
+}
+
+@font-face {
+  font-family: 'Largest Genome Font';
+  src: url('../resources/fonts/Quicksand-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Largest Genome Font';
+  src: url('../resources/fonts/Quicksand-Medium.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Largest Genome Font';
+  src: url('../resources/fonts/Quicksand-Light.ttf');
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  height: 100vh;
+  background: linear-gradient(90deg, #005163 20%, #007D99 80%) !important;
+  text-align: center;
+}
+
+H2 {
+  font-size: 2rem;
+}
+
+.nosotros {
+  margin-top: 10rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.nosotros p {
+  margin-top: 3rem;
+}
+
+.espaciado {
+  margin-bottom: 6rem; 
+}
+
+.servicios {
+  width: 25rem;
+  height: 25rem;
+  background: linear-gradient(90deg, #1b9c85 42%, #17826e);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  box-shadow: 0px 0px 1rem rgba(255, 255, 255, 0.293);
+}
+
+.servicios a {
+  color: #000000;
+  font-size: 1.5rem;
+}
+form {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 1.7rem;
+}
+
+#btn {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #000000;
+  font-size: 1.6rem;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 1.5rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  background-color: #007D99;
+}
+
+#btn:hover {
+  background: #00AACC;
+  color: #000000;
+  border-radius: 0.5rem;
+}
+
+#btn span {
+  position: absolute;
+  display: block;
+}
+
+#btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0.2rem;
+  background: linear-gradient(90deg, transparent, #000000);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+#btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 0.2rem;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #000000);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+#btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 0.2rem;
+  background: linear-gradient(270deg, transparent, #000000);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+#btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 0.2rem;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #000000);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.espaciado {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 200px) {
+  .navbar-brand img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .nosotros {
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .servicios {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+@media (min-width: 201px) and (max-widht: 359px) {
+  .registro {
+    margin-top: -14rem !important;
+    width: 20rem !important;
+    height: 46rem !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    z-index: 1;
+  }
+
+  select {
+    width: 90%;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .registro {
+    margin-top: -14rem !important;
+    width: 30rem !important;
+    height: 45rem !important;
+    z-index: 1;
+  }
+
+  select {
+    width: 55%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .registro {
+    margin-top: -14rem !important;
+    width: 40rem !important;
+    height: 60rem !important;
+    z-index: 1;
+  }
+
+  input {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .registro {
+    margin-top: -7rem !important;
+    width: 40rem !important;
+    height: 56rem !important;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .registro {
+    margin-top: -7rem !important;
+    width: 40rem !important;
+    height: 56rem !important;
+    z-index: 1;
+  }
+}

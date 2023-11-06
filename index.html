@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="reseñas gastronómicas, restaurantes, experiencias culinarias, La Cocina Celeste">
+    <meta name="author" content="Arias Web Designers">
+    <meta name="description" content="Explora reseñas gastronómicas de restaurantes y descubre nuevas experiencias culinarias en La Cocina Celeste.">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="La Cocina Celeste - Donde cada plato tiene su historia"/>
+    <meta property="og:description" content="Explora reseñas gastronómicas de restaurantes y descubre nuevas experiencias culinarias en La Cocina Celeste.">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="resources/img/LaCocinaCeleste.png" type="image/x-icon">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CDN Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>La Cocina Celeste - Donde cada plato tiene su historia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg">
+        <div class="container">
+            <a class="navbar-brand"><img src="resources/img/LaCocinaCeleste.png" alt="Logo de La Cocina Celeste" width="80rem"
+                height="80rem"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button id="btn" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Iniciar sesion
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4 text-center">
+        <h1>Bienvenido a La Cocina Celeste</h1>
+        <p>Aquí, podrás descubrir un mundo de experiencias <br> culinarias que te llevarán a saborear los rincones <br>
+            más exquisitos de la gastronomía. <br> Nuestra plataforma está diseñada para <br> satisfacer los paladares
+            más exigentes <br> y aventureros, ofreciéndote una <br> amplia gama de reseñas imparciales <br> y detalladas
+            sobre los mejores restaurantes <br> de la ciudad y más allá.</p>
+    </div>
+
+    <div class="card">
+        <a href="/html/restaurantes.html">
+            <img src="resources/img/resto4.jpeg" alt="RestoInfo">
+        </a>
+        <a href="html/nosotros.html">
+            <img src="resources/img/equipe.png" alt="AboutUs">
+        </a>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        // Obtener el botón por su ID
+        var boton = document.getElementById("btn");
+
+        // Agregar un evento de clic al botón
+        boton.addEventListener("click", function () {
+            // Redirigir a la otra página dentro del mismo archivo
+            window.location.href = "html/login.html";
+        });
+    </script>
+</body>
+<footer>
+    <div class="footer">
+        <a href="https://www.instagram.com/lacocinaceleste6/" class="socialContainer containerOne" target="_blank">
+            <i class="fa-brands fa-instagram socialIcon"></i>
+        </a>
+        <a href="https://twitter.com/CocinaCeleste" class="socialContainer containerTwo" target="_blank">
+            <i class="fa-brands fa-twitter socialIcon"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61552981630322" class="socialContainer containerThree" target="_blank">
+            <i class="fa-brands fa-facebook socialIcon"></i>
+        </a>
+        <a href="https://whatsapp.com/" class="socialContainer containerFour" target="_blank">
+            <i class="fa-brands fa-whatsapp socialIcon"></i>
+        </a>
+    </div>
+
+</footer>
+
+</html>

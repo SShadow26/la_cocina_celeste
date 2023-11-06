@@ -1,0 +1,422 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1 rem = 10 pixeles*/
+}
+
+@font-face {
+  font-family: 'Largest Genome Font';
+  src: url('../resources/fonts/Quicksand-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Largest Genome Font';
+  src: url('../resources/fonts/Quicksand-Medium.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Largest Genome Font';
+  src: url('../resources/fonts/Quicksand-Light.ttf');
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  height: 100vh;
+  background: linear-gradient(90deg, #005163 20%, #007D99 80%) !important;
+}
+
+h1 {
+  font-family: 'Largest Genome Font';
+  src: url('../resources/fonts/Quicksand-Medium.ttf');
+  color: #212529;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#btn {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #000000;
+  font-size: 1.6rem;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 1.5rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  background-color: #007D99;
+}
+
+#btn:hover {
+  background: #00AACC;
+  color: #000000;
+  border-radius: 0.5rem;
+}
+
+#btn span {
+  position: absolute;
+  display: block;
+}
+
+#btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0.2rem;
+  background: linear-gradient(90deg, transparent, #000000);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+#btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 0.2rem;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #000000);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+#btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 0.2rem;
+  background: linear-gradient(270deg, transparent, #000000);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+#btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 0.2rem;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #000000);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.footer {
+  width: fit-content;
+  height: fit-content;
+  background-color: #00AACC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  border-radius: 15px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px #00AACC;
+  margin-left: 45rem;
+  margin-top: 3rem;
+}
+
+.footer a {
+  text-decoration: none !important;
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background: #00AACC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  border-radius: 15px;
+}
+
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+.containerTwo:hover {
+  background-color: #05b8ff;
+  transition-duration: .3s;
+}
+
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialIcon {
+  color: #000000;
+}
+
+.socialIcon:hover {
+  color: #00AACC;
+}
+
+.socialContainer:hover .socialIcon {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card {
+  max-width: 60rem;
+  max-height: 35rem;
+  display: flex;
+  flex-wrap: wrap;
+  background: none;
+  border: none;
+  margin-left: 7rem;
+  margin-right: 2rem;
+  padding-top: 2rem;
+
+}
+
+.card img {
+  width: 60%;
+  height: 100%;
+  transform-origin: center;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+}
+
+.card:hover img {
+  opacity:0.3;
+}
+
+.card img:hover {
+  transform:perspective(800px)       rotateY(0deg);
+  opacity:1;
+}
+
+@media (max-width: 200px) {
+  body {
+    margin-top: 0.1rem;
+  }
+
+  .navbar-brand {
+    margin-top: -1rem;
+  }
+
+  .navbar-brand img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .navbar-brand #btn {
+    width: 0.1rem;
+    height: 0.2rem;
+  }
+
+  h1 {
+    margin-top: -1rem;
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .card {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .card img {
+    width: 17rem;
+    height: 13rem;
+  }
+
+  .footer {
+    padding: 10px 10px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  .socialContainer {
+    width: 15px;
+    height: 21px;
+  }
+}
+
+@media (min-width: 201px) and (max-width: 767px) {
+  body {
+    margin-top: 0.1rem;
+  }
+
+  .navbar-brand {
+    margin-top: -1rem;
+  }
+
+  .navbar-brand img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .navbar-brand #btn {
+    width: 0.1rem;
+    height: 0.2rem;
+  }
+
+  h1 {
+    margin-top: -1rem;
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .card {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .card img {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .footer {
+    padding: 15px 15px;
+    margin-left: 6rem;
+    margin-top: 3rem;
+  }
+
+  .socialContainer {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin-top: 0.1rem;
+  }
+
+  .navbar-brand {
+    margin-top: -1rem;
+  }
+
+  h1 {
+    margin-top: -1rem;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    margin-left: 0.7rem;
+    margin-right: 28rem;
+  }
+
+  .card img {
+    width: 60%;
+    height: 100%;
+  }
+
+  .footer {
+    padding: 25px 25px;
+    margin-left: 25rem;
+    margin-top: 8rem;
+  }
+
+  .socialContainer {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navbar-brand {
+    margin-top: -1rem;
+  }
+
+  h1 {
+    margin-top: -1rem;
+  }
+
+  .card img {
+    width: 55%;
+    height: 100%;
+  }
+
+  .footer {
+    padding: 25px 25px;
+    margin-left: 45rem;
+    margin-right: -1rem;
+    margin-top: 6rem;
+  }
+
+  .socialContainer {
+    width: 42px;
+    height: 42px;
+  }
+}

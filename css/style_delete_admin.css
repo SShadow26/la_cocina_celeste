@@ -1,0 +1,322 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 rem = 10 pixeles*/
+    font-family: 'Kurale', serif;
+}
+
+@font-face {
+    font-family: 'Largest Genome Font';
+    src: url('../resources/fonts/Quicksand-Light.ttf') format('truetype');
+  }
+  
+@font-face {
+    font-family: 'Largest Genome Font';
+    src: url('../resources/fonts/Quicksand-Medium.ttf') format('truetype');
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Largest Genome Font';
+    src: url('../resources/fonts/Quicksand-Light.ttf');
+	margin: 20px;
+	font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    height: 100vh;
+    background: linear-gradient(90deg, #005163 20%, #007D99 80%) !important;
+	overflow: hidden;
+}
+
+form input {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    color: #00AACC;
+    margin-bottom: 3rem;
+    border: none;
+    border-bottom: 0.1rem solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+#btn {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: #000000;
+    font-size: 1.6rem;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 1.5rem;
+    margin-left: 0;
+    letter-spacing: 0.2rem;
+    border: none;
+    background-color: #007D99;
+  }
+  
+  #btn:hover {
+    background: #00AACC;
+    color: #000000;
+    border-radius: 0.5rem;
+  }
+  
+  #btn span {
+    position: absolute;
+    display: block;
+  }
+  
+  #btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(90deg, transparent, #000000);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+  #btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #000000);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+  
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  
+  #btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(270deg, transparent, #000000);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+  
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+  
+  #btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #000000);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+
+.pagination {
+    text-align: center;
+}
+
+form {
+    margin-top: -12rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 40rem;
+  height: 66rem;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #005163 20%, #007D99 80%);
+  box-sizing: border-box;
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, .6);
+  border-radius: 1rem;
+}
+
+tr {
+    border: 0.25rem solid #b32100;
+    border-radius: 1rem;
+}
+
+th {
+    border: 0.25rem solid #b32100;
+    border-radius: 1rem;
+    border-radius: 1rem;
+}
+
+td {
+    border: 0.25rem solid #b32100;
+    border-radius: 1rem;
+}
+
+tr:hover {
+    background-color: #00AACC;
+    color: #b32100;
+}
+
+
+h2 {
+    font-family: 'Largest Genome Font';
+    src: url('../resources/fonts/Quicksand-Medium.ttf');
+	text-align: center;
+	padding: 20px;
+}
+
+.btn {
+    position: relative;
+    display: inline-flex;
+    padding: 1rem 2rem;
+    color: #000000;
+    font-size: 1.6rem;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 1.5rem;
+    margin-left: 0;
+    letter-spacing: 0.2rem;
+    border: none;
+    background-color: #007D99;
+  }
+  
+.btn:hover {
+    background: #00AACC;
+    color: #000000;
+    border-radius: 0.5rem;
+  }
+  
+.btn span {
+    position: absolute;
+    display: block;
+  }
+  
+.btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(90deg, transparent, #000000);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+.btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #000000);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+  
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  
+.btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(270deg, transparent, #000000);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+  
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+  
+.btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #000000);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+
+  @media (min-width: 319px) and (max-width: 360px) {
+    form {
+      margin-top: -12rem;
+      width: 30rem;
+      height: 27rem;
+    }
+  }

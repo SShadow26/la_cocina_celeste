@@ -1,0 +1,181 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 rem = 10 pixeles*/
+    font-family: 'Kurale', serif;
+}
+
+@font-face {
+    font-family: 'Largest Genome Font';
+    src: url('../resources/fonts/Quicksand-Light.ttf') format('truetype');
+  }
+  
+@font-face {
+    font-family: 'Largest Genome Font';
+    src: url('../resources/fonts/Quicksand-Medium.ttf') format('truetype');
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Largest Genome Font';
+    src: url('../resources/fonts/Quicksand-Light.ttf');
+	margin: 20px;
+	font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    height: 100vh;
+    background: linear-gradient(90deg, #005163 20%, #007D99 80%) !important;
+	overflow: hidden;
+}
+
+#btn {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: #000000;
+    font-size: 1.6rem;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 1.5rem;
+    margin-left: 46%;
+    letter-spacing: 0.2rem;
+    border: none;
+    background-color: #007D99;
+  }
+  
+  #btn:hover {
+    background: #00AACC;
+    color: #000000;
+    border-radius: 0.5rem;
+  }
+  
+  #btn span {
+    position: absolute;
+    display: block;
+  }
+  
+  #btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(90deg, transparent, #000000);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+  #btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #000000);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+  
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  
+  #btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(270deg, transparent, #000000);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+  
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+  
+  #btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #000000);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+
+.pagination {
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    max-width: 70%;
+    margin: 5rem auto;
+    border-radius: 1.8rem;
+    color: #00d5ff;
+}
+
+tr {
+    border: 0.25rem solid #1B9C85;
+    border-radius: 1rem;
+}
+
+th {
+    border: 0.25rem solid #1B9C85;
+    border-radius: 1rem;
+    border-radius: 1rem;
+}
+
+td {
+    border: 0.25rem solid #1B9C85;
+    border-radius: 1rem;
+}
+
+tr:hover {
+    background-color: #00AACC;
+    color: #005041;
+}
+
+
+h2 {
+	text-align: center;
+	color: #fff;
+	padding: 20px;
+}

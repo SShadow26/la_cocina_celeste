@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 rem = 10 pixeles*/
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    height: 100vh;
+    background-color: #FCE9EA;
+}
+
+/* Estilos CSS para la paginación (puedes personalizarlos según tus necesidades) */
+#pagination {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.pagination-button {
+    display: inline-block;
+    margin: 0.5;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid #ccc;
+    cursor: pointer;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: #B8192A;
+    font-size: 1.6rem;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 1.5rem;
+    letter-spacing: 0.2rem;
+    border: none;
+    background-color: #fce9ea;
+}
+
+.btn:hover {
+    background: #FCE9EA;
+    color: #811124;
+    border-radius: 0.5rem;
+}
+
+.btn span {
+    position: absolute;
+    display: block;
+}
+
+.btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(90deg, transparent, #B8192A);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #B8192A);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(270deg, transparent, #B8192A);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #B8192A);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}

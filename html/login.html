@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="reseñas gastronómicas, restaurantes, experiencias culinarias, La Cocina Celeste">
+    <meta name="author" content="Arias Web Designers">
+    <meta name="description" content="Explora reseñas gastronómicas de restaurantes y descubre nuevas experiencias culinarias en La Cocina Celeste.">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="La Cocina Celeste - Donde cada plato tiene su historia"/>
+    <meta property="og:description" content="Explora reseñas gastronómicas de restaurantes y descubre nuevas experiencias culinarias en La Cocina Celeste.">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="resources/img/LaCocinaCeleste.png" type="image/x-icon">
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CDN Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>La Cocina Celeste - Login</title>
+    <link rel="stylesheet" href="../css/style_login.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg">
+        <div class="container">
+            <!-- Logo de la empresa -->
+            <a class="navbar-brand"><img src="../resources/img/LaCocinaCeleste.png" alt="Logo de La Cocina Celeste" width="80rem" height="80rem"></a>
+            <!-- Botón de hamburguesa para dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Enlaces en el medio -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/restaurantes.html">Restaurantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/nosotros.html">Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="formulario">
+        <form action="../php/models/procesar_login.php" method="post">
+            <label for="email">Email: </label><br>
+            <input type="email" class="email" id="email" name="email" required placeholder="Ingrese aquí su Email"><br><br>
+            <label for="password">Contraseña: </label>
+            <input type="password" class="password" id="password" name="password" required placeholder="Ingrese aquí su Contraseña">
+            <button type="submit" class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Ingresa aquí
+            </button>
+            <br><br>
+            <a href="../html/recuperacion.html">Click aquí si olvidó su contraseña.</a><br>
+            <a href="../html/registro.html">Click aquí si no tiene cuenta todavía.</a><br>
+        </form>
+    </div>
+
+    <!-- Bootstrap 5 JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+</html>
